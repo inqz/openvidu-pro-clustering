@@ -3,8 +3,8 @@
 ###########################
 # Credentials needed to download the jar file from https://pro.openvidu.io
 # Please contact openvidu@gmail.com to request one
-openvidu_pro_username:
-openvidu_pro_password:
+openvidu_pro_username: sleeeem
+openvidu_pro_password: mysecretpassword
 
 ###########################################
 # OpenVidu Server configuration parameters
@@ -18,23 +18,23 @@ openvidu_version: 2.11.0
 
 # A comma separate list of IPs from the KMS instances
 # i.e. 192.168.0.5,192.168.0.6
-kms_ips:
+kms_ips: 185.22.61.89
 
 # Parameter "openvidu.secret"
 # Use this to connect to OpenVidu endpoint
-openvidu_secret: "MY_SECRET"
+openvidu_secret: "1231"
 
 # Parameter "openvidu.publicurl"
 # For selfsigned certificate, type the public domain name
 # We use this value to access OpenVidu Inspector and Kibana Dashboard
 # i. e. openvidu.example.com
-openvidu_publicurl:
+openvidu_publicurl: ovpro.108dev.space
 
 # Parameter "openvidu.cdr"
 # Call Detail Record enabled
 # Whether to enable Call Detail Record or not
 # Values: true | false
-openvidu_cdr:
+openvidu_cdr: false
 
 # Parameter "openvidu.recording.public-access"
 # if true any client can connect to
@@ -43,7 +43,7 @@ openvidu_cdr:
 # openvidu.secret param just as OpenVidu Server dashboard at
 # https://OPENVIDU_SERVER_IP:OPENVIDU_PORT
 # Values: true | false
-openvidu_recording_public_access: true
+openvidu_recording_public_access: false
 
 # Parameter "openvidu.recording.notification"
 # Which users should receive the recording events in the client side
@@ -51,7 +51,7 @@ openvidu_recording_public_access: true
 # the session), publisher_moderator (users with role 'PUBLISHER' or
 # 'MODERATOR'), moderator (only users with role 'MODERATOR') or none
 # (no user will receive these events)
-openvidu_recording_notification: all
+openvidu_recording_notification: none
 
 # Parameter "openvidu.streams.video.max-recv-bandwidth"
 # Maximum video bandwidth sent from clients to OpenVidu Server, in kbps.
@@ -117,7 +117,7 @@ openvidu_pro_cluster_load_strategy: streams
 
 # Should be the same than in the inventory file
 # We use this value for proxying
-openvidu_public_ip:
+openvidu_public_ip: 185.22.61.89
 
 # Certificate type
 # You can choose:

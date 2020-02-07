@@ -2,25 +2,17 @@
 all:
   hosts:
     openvidu-server:
-      ansible_host: OPENVIDU_SERVER_IP
+      ansible_host: 185.22.61.23
     media-server-1:
-      ansible_host: MEDIA_SERVER_1_IP
-    # media-server-2:
-    #   ansible_host: MEDIA_SERVER_2_IP
-    # ...
-    # media-server-N:
-    #   ansible_host: MEDIA_SERVER_N_IP
+      ansible_host: 185.22.61.89
   vars:
       ansible_become: true
-      ansible_user: USER
-      ansible_ssh_private_key_file: /PATH/TO/SSH_public_key
+      ansible_user: root
+      ansible_ssh_private_key_file: /Users/zhukov/.ssh/id_rsa
   children:
     media-servers:
       hosts:
         media-server-1:
-      #   media-server-2:
-      #   ...
-      #   media-server-N:
     openvidu:
       hosts:
         openvidu-server:
